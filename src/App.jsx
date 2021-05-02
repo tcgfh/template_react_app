@@ -1,6 +1,11 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+/**
+* Entry point of the app
+* @return {object} react component representing the main app
+*/
 function App() {
   return (
     <div className="App">

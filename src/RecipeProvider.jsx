@@ -17,7 +17,7 @@ function getDefaultRecipe() {
 export const RecipeContext = createContext();
 
 export function RecipeProvider({ children }) {
-  const [recipe] = useState(getDefaultRecipe);
+  const [recipe] = useState(getDefaultRecipe());
   return (
     <RecipeContext.Provider value={recipe}>
       {children}

@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import { RecipeProvider } from './RecipeProvider';
+import RecipeView from './RecipeView';
 
 /**
 * Entry point of the app
@@ -7,7 +9,11 @@ import './App.css';
 */
 function App() {
   return (
-    <div className="App" />
+    <div className="App">
+      <RecipeProvider>
+        <RecipeView />
+      </RecipeProvider>
+    </div>
   );
 }
 
